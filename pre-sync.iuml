@@ -1,7 +1,11 @@
 @startuml
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 20
+Client 1 -> Server : Read the pre-sync configmap
+hnote over Client 1 : CM unlocked 
+Client 2 -> Server : Read the pre-sync configmap
+hnote over Client 2 : CM unlocked 
+Client 1 -> Server : Try: lock configmap
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: Another authentication Response
+
 @enduml
