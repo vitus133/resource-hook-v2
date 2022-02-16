@@ -7,4 +7,4 @@
 
 
 
-![pre-sync](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/vitus133/try-md/master/pre-sync.iuml)
+![pre-sync](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/vitus133/resource-hook-v2/master/pre-sync.iuml)
