@@ -13,7 +13,7 @@ spec:
         - name: ztp-site-generator
           image: quay.io/vgrinber/pre-cache:latest 
           command: ["/bin/bash", "-c"]
-          args: ["sleep 60"]
+          args: ["declare -i i=0; while true; do sleep 60 && i=$i+60 && echo 'hook is running for $i seconds'; done"]
       restartPolicy: Never
   backoffLimit: 0
   ttlSecondsAfterFinished: 60
