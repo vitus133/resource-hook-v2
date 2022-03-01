@@ -13,7 +13,7 @@ spec:
         - name: ztp-site-generator
           image: quay.io/vgrinber/pre-cache:latest 
           command: ["/bin/bash", "-c"]
-          args: ["sleep inf"]
+          args: ["sleep 60"]
       restartPolicy: Never
   backoffLimit: 0
   ttlSecondsAfterFinished: 60
