@@ -11,9 +11,9 @@ spec:
     spec:
       containers:
         - name: ztp-site-generator
-          image: quay.io/vgrinber/pre-cache:latest 
+          image: quay.io/vgrinber/ztp-site-generator:latest 
           command: ["/bin/bash", "-c"]
-          args: ["declare -i i=0; while true; do sleep 60 && i=$i+60 && echo $i; done"]
+          args: ["sleep 7200"]
       restartPolicy: Never
   backoffLimit: 0
   ttlSecondsAfterFinished: 60
